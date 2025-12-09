@@ -1,8 +1,8 @@
 {
 	"meta": {
-		"title": "YYsuni",
-		"description": "YYsuni 的个人博客，记录前端开发、探索、笔记。前端 UI 更新代码仓库。",
-		"username": "Suni"
+		"title": "Gloomoon",
+		"description": "Gloomoon 的个人博客，记录前端开发、探索、笔记。前端 UI 更新代码仓库。",
+		"username": "Gloomoon"
 	},
 	"theme": {
 		"colorBrand": "#de4331",
@@ -37,33 +37,37 @@
 		{
 			"id": "",
 			"url": ""
+		},
+		{
+			"id": "cc8fcd57e7fcf47a",
+			"url": "/images/background/cc8fcd57e7fcf47a.png"
 		}
 	],
-	"currentBackgroundImageId": "",
+	"currentBackgroundImageId": "cc8fcd57e7fcf47a",
 	"socialButtons": [
 		{
 			"id": "github",
 			"type": "github",
-			"value": "https://github.com/yysuni",
+			"value": "https://github.com/axolotl520",
 			"label": "Github",
 			"order": 3
 		},
 		{
 			"id": "juejin",
-			"type": "juejin",
-			"value": "https://juejin.cn/user/2427311675422382",
-			"label": "稀土掘金",
+			"type": "bilibili",
+			"value": "https://space.bilibili.com/404614832",
+			"label": "bilibili",
 			"order": 2
 		},
 		{
 			"id": "email",
 			"type": "email",
-			"value": "yysuni1001@gmail.com",
+			"value": "3382724692@qq.com",
 			"label": "",
 			"order": 1
 		}
 	],
-	"clockShowSeconds": false,
+	"clockShowSeconds": true,
 	"summaryInContent": false,
 	"isCachePem": false,
 	"hideEditButton": false
