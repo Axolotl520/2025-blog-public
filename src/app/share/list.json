@@ -242,5 +242,15 @@
 			"工具"
 		],
 		"stars": 3
+	},
+	{
+		"name": "Github加速",
+		"logo": "blob:https://gloomoon.dpdns.org/aecd66dc-9351-40a6-bca2-26a860a23ab4",
+		"url": "https://gh-proxy.com/",
+		"description": "将GitHub链接转换为多区域加速链接，解决GitHub访问慢、下载失败等问题",
+		"tags": [
+			"Github"
+		],
+		"stars": 5
 	}
 ]
