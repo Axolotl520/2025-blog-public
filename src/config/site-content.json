@@ -49,14 +49,14 @@
 			"id": "github",
 			"type": "github",
 			"value": "https://github.com/axolotl520",
-			"label": "Github",
+			"label": "",
 			"order": 3
 		},
 		{
 			"id": "juejin",
 			"type": "bilibili",
 			"value": "https://space.bilibili.com/404614832",
-			"label": "bilibili",
+			"label": "",
 			"order": 2
 		},
 		{
@@ -65,10 +65,17 @@
 			"value": "3382724692@qq.com",
 			"label": "",
 			"order": 1
+		},
+		{
+			"id": "button-1765412118251",
+			"type": "juejin",
+			"value": "https://juejin.cn/user/3986157550976649",
+			"label": "",
+			"order": 4
 		}
 	],
 	"clockShowSeconds": true,
 	"summaryInContent": false,
 	"isCachePem": false,
-	"hideEditButton": false
+	"hideEditButton": true
 }
