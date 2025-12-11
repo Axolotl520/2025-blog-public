@@ -232,5 +232,15 @@
 			"3D"
 		],
 		"stars": 3
+	},
+	{
+		"name": "临时文件分享",
+		"logo": "blob:https://gloomoon.dpdns.org/37f7e2b4-9d37-4417-b205-949ed3faeb57",
+		"url": "https://wormhole.app/",
+		"description": "简单，私密的文件分享",
+		"tags": [
+			"工具"
+		],
+		"stars": 3
 	}
 ]
