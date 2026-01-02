@@ -1,9 +1,29 @@
 import { create } from 'zustand'
 import siteContent from '@/config/site-content.json'
-import cardStyles from '@/config/card-styles.json'
+import defaultCardStyles from '@/config/card-styles-default.json'
+import cardStylesOverrides from '@/config/card-styles.json'
 
 export type SiteContent = typeof siteContent
-export type CardStyles = typeof cardStyles
+export type CardStyles = typeof defaultCardStyles
+
+const mergeCardStyles = (defaults: CardStyles, overrides: unknown): CardStyles => {
+	const merged = { ...defaults } as Record<string, any>
+	const overridesRecord = (overrides ?? {}) as Record<string, any>
+
+	for (const key of Object.keys(overridesRecord)) {
+		const base = merged[key]
+		const patch = overridesRecord[key]
+		if (base && typeof base === 'object' && patch && typeof patch === 'object') {
+			merged[key] = { ...base, ...patch }
+		} else {
+			merged[key] = patch
+		}
+	}
+
+	return merged as CardStyles
+}
+
+const initialCardStyles: CardStyles = mergeCardStyles(defaultCardStyles, cardStylesOverrides)
 
 interface ConfigStore {
 	siteContent: SiteContent
@@ -20,7 +40,7 @@ interface ConfigStore {
 
 export const useConfigStore = create<ConfigStore>((set, get) => ({
 	siteContent: { ...siteContent },
-	cardStyles: { ...cardStyles },
+	cardStyles: initialCardStyles,
 	regenerateKey: 0,
 	configDialogOpen: false,
 	setSiteContent: (content: SiteContent) => {
@@ -33,7 +53,7 @@ export const useConfigStore = create<ConfigStore>((set, get) => ({
 		set({ siteContent: { ...siteContent } })
 	},
 	resetCardStyles: () => {
-		set({ cardStyles: { ...cardStyles } })
+		set({ cardStyles: initialCardStyles })
 	},
 	regenerateBubbles: () => {
 		set(state => ({ regenerateKey: state.regenerateKey + 1 }))
