@@ -32,7 +32,7 @@
 			"url": "/images/art/a46372ff45bc5524.jpg"
 		}
 	],
-	"currentArtImageId": "cat",
+	"currentArtImageId": "a46372ff45bc5524",
 	"backgroundImages": [
 		{
 			"id": "",
@@ -43,19 +43,11 @@
 			"url": "/images/background/cc8fcd57e7fcf47a.png"
 		},
 		{
-			"id": "f322e579e4d5f487",
-			"url": "/images/background/f322e579e4d5f487.jpg"
-		},
-		{
 			"id": "0ca2e3b6ad4eace7",
 			"url": "/images/background/0ca2e3b6ad4eace7.png"
-		},
-		{
-			"id": "1",
-			"url": "/images/background/1.png"
 		}
 	],
-	"currentBackgroundImageId": "1",
+	"currentBackgroundImageId": "0ca2e3b6ad4eace7",
 	"socialButtons": [
 		{
 			"id": "github",
